@@ -1,0 +1,240 @@
+{
+  "nodes": [
+    {
+      "id": "관세",
+      "importance": 1.0
+    },
+    {
+      "id": "BYD",
+      "importance": 0.889060663111203
+    },
+    {
+      "id": "리튬",
+      "importance": 0.9235663595717322
+    },
+    {
+      "id": "테슬라",
+      "importance": 0.7292983810408136
+    },
+    {
+      "id": "중국",
+      "importance": 0.9250401273842137
+    }
+  ],
+  "edges": [
+    {
+      "source": "BYD",
+      "target": "테슬라",
+      "weight": 0.8659379571676254,
+      "cooccurrence": 0.8,
+      "similarity": 0.9318759143352509,
+      "articles": [
+        {
+          "link": "https://n.news.naver.com/mnews/article/396/0000725571?sid=103",
+          "title": "전기차, 효율을 넘어 브랜드의 시대로…전삼사가 이끄는 새로운 소비 기...",
+          "pubDate": "Wed, 29 Oct 2025 16:34:00 +0900",
+          "trust_score": 0.6005909172301145,
+          "description": "Polestar 4 MY 26\n  국내 전기차 시장이 새로운 전환점에 들어섰다. 과거에는 유지비 절감과 보조금이 소비자 선택의 핵심 요인이었다...."
+        },
+        {
+          "link": "https://n.news.naver.com/mnews/article/015/0005203081?sid=101",
+          "title": "재팬모빌리티쇼 30일 개막…현대차·BYD, 전기차로 격돌",
+          "pubDate": "Tue, 28 Oct 2025 15:56:00 +0900",
+          "trust_score": 0.5605756230124223,
+          "description": "'수입차의 무덤' 일본시장 공략\n\n현대차 - 수소전기차 '뉴 넥쏘' 공개\n기아 - 목적기반차량 'PV5' 데뷔\n\nBYD - 경형 전기차 세계 첫..."
+        },
+        {
+          "link": "https://n.news.naver.com/mnews/article/277/0005670297?sid=103",
+          "title": "BYD의 '중국식 혁신', 세계를 압박하다",
+          "pubDate": "Tue, 28 Oct 2025 07:00:00 +0900",
+          "trust_score": 0.5605756230124223,
+          "description": "[현대차, 오버 더 모빌리티](37)\n도요타·테슬라·BYD 등 경쟁사 분석\nBYD, 기술·생산·가격 '삼박자'로\n중국식 혁신 모델로 전기차 점유..."
+        },
+        {
+          "link": "https://n.news.naver.com/mnews/article/023/0003936202?sid=101",
+          "title": "테슬라·미니·BYD… 중국産 전기차의 한국 공습",
+          "pubDate": "Thu, 23 Oct 2025 00:34:00 +0900",
+          "trust_score": 0.42756262292958813,
+          "description": "올 들어 5만대 판매… 작년의 두 배\n\t\t\t\t\t\t\t올해 한국에서 팔린 전기차 3대 중 1대는 중국산이다. 22일 한국자동차모빌리티산업협회(KAM..."
+        }
+      ]
+    },
+    {
+      "source": "중국",
+      "target": "테슬라",
+      "weight": 0.8643989503383637,
+      "cooccurrence": 0.8,
+      "similarity": 0.9287979006767273,
+      "articles": [
+        {
+          "link": "https://n.news.naver.com/mnews/article/014/0005427476?sid=101",
+          "title": "[뉴욕증시] 메타 급락세 속 3대 지수 일제히 하락…테슬라·엔비디아 동...",
+          "pubDate": "Fri, 31 Oct 2025 05:52:00 +0900",
+          "trust_score": 0.7,
+          "description": "[파이낸셜뉴스]\n\n뉴욕 증시 3대 지수가 30일(현지시간) 일제히 하락했다.\n\n전날까지 거래일 기준으로 나흘 내리 사상 최고 행진을 이어갔던 나..."
+        },
+        {
+          "link": "https://n.news.naver.com/mnews/article/374/0000471931?sid=104",
+          "title": "테슬라, 내달 상하이서 사이버캡 공개…아시아 시장 첫 데뷔",
+          "pubDate": "Fri, 31 Oct 2025 04:22:00 +0900",
+          "trust_score": 0.7,
+          "description": "테슬라가 자율주행 전용 로보택시 모델인 사이버캡을 오는 11월 5일부터 10일까지 중국 상하이에서 열리는 '중국 국제수입 박람회' (China..."
+        },
+        {
+          "link": "https://n.news.naver.com/mnews/article/008/0005270487?sid=101",
+          "title": "미국은 '뇌'·중국은 '눈' 싹쓸이…손발 묶인 K-자율주행, 부품서도 밀린...",
+          "pubDate": "Thu, 30 Oct 2025 08:00:00 +0900",
+          "trust_score": 0.6467511599000726,
+          "description": "[MT리포트] 속도 못내는 K-자율주행 (下)[편집자주] 미국과 중국은 자율주행 상용화를 가속화하며 도로 위에서 '모빌리티 산업의 미래'를 실현..."
+        },
+        {
+          "link": "https://n.news.naver.com/mnews/article/018/0006148192?sid=101",
+          "title": "서학개미, 테슬라 대신 SPY 샀다…3분기 외화증권 보관액 2203억달러",
+          "pubDate": "Mon, 27 Oct 2025 10:42:00 +0900",
+          "trust_score": 0.5258872488031037,
+          "description": "예탁원 “3분기 외화증권 보관액 전년비 60% 증가”\n전분기와 비교해도 19% 늘어…보관액 1위는 테슬라\n외화증권 결제액 15% 증가…사고 판..."
+        }
+      ]
+    },
+    {
+      "source": "리튬",
+      "target": "테슬라",
+      "weight": 0.9736069887876511,
+      "cooccurrence": 1.0,
+      "similarity": 0.9472139775753021,
+      "articles": [
+        {
+          "link": "https://n.news.naver.com/mnews/article/293/0000074004?sid=101",
+          "title": "국토부, '테슬라 BMS_a079 오류' 리콜 소극적...&quot;민원 거의 없다&quot;",
+          "pubDate": "Fri, 24 Oct 2025 15:50:00 +0900",
+          "trust_score": 0.44715177646857696,
+          "description": "국토교통부가 테슬라 'BMS_a079' 오류와 관련된 국내 오너들의 불만이 확산된 상황에서 리콜 조치에 소극적이었던 것으로 나타났다. 국회뿐 아..."
+        },
+        {
+          "link": "https://n.news.naver.com/mnews/article/024/0000100808?sid=102",
+          "title": "한국산 배터리로 무장한 폴스타5...“테슬라·포르쉐, 그동안 애썼다”...",
+          "pubDate": "Fri, 24 Oct 2025 21:01:00 +0900",
+          "trust_score": 0.44715177646857696,
+          "description": "스웨덴 출신 전기차 브랜드인 폴스타가 ‘고성능차의 대명사’ 포르쉐에 맞설 전기차를 내년에 한국에 가져온다. 폴스타는 지난달 9일(현지시간) 독일..."
+        },
+        {
+          "link": "https://n.news.naver.com/mnews/article/008/0005267292?sid=101",
+          "title": "&quot;2차전지 구조대 기다렸는데&quot;…테슬라 실적 부진에 '급브레이크'",
+          "pubDate": "Thu, 23 Oct 2025 15:55:00 +0900",
+          "trust_score": 0.42756262292958813,
+          "description": "에코프로 6% 하락…\"전기차 배터리 수요 둔화\"질주하던 2차전지 주에 제동이 걸렸다. 테슬라가 컨센서스를 밑도는 순이익을 기록하며 하락하자, 국..."
+        },
+        {
+          "link": "https://n.news.naver.com/mnews/article/016/0002546020?sid=101",
+          "title": "테슬라, 역대 최대 매출에도 순익 37% 급감…요즘 불장 K-이차전지 때 이...",
+          "pubDate": "Thu, 23 Oct 2025 09:29:00 +0900",
+          "trust_score": 0.42756262292958813,
+          "description": "테슬라 3Q 매출 281억弗…전년比 7% 증가 ‘역대 최대’\nEPS는 0.50弗로 시장 전망 하회…전체 순익 13.7억弗 ‘전년比 37% ↓’..."
+        },
+        {
+          "link": "https://n.news.naver.com/mnews/article/025/0003476527?sid=101",
+          "title": "&quot;2815만원 수리비 폭탄&quot; 韓소비자 뒤통수치는 테슬라 배터리 논란",
+          "pubDate": "Mon, 20 Oct 2025 18:12:00 +0900",
+          "trust_score": 0.38309927485744033,
+          "description": "#충남 홍성에 사는 A씨는 지난 8월 2021년식 테슬라 모델3 롱레인지를 타던 중 센터디스플레이에 ‘BMS_a079, 충전 불가. 정비 예약하..."
+        }
+      ]
+    },
+    {
+      "source": "관세",
+      "target": "테슬라",
+      "weight": 0.9835360050201416,
+      "cooccurrence": 1.0,
+      "similarity": 0.9670720100402832,
+      "articles": [
+        {
+          "link": "https://n.news.naver.com/mnews/article/001/0015711065?sid=101",
+          "title": "삼성증권 &quot;현대차, 한미협상 타결로 내년 관세 7천800억원 감소&quot;",
+          "pubDate": "Thu, 30 Oct 2025 08:46:00 +0900",
+          "trust_score": 0.6467511599000726,
+          "description": "\"실적 피크아웃 논란 불식 전망…저평가 해소시 40만원도 가능\"\n\n(서울=연합뉴스) 황철환 기자 = 삼성증권은 도널드 트럼프 미국 대통령의 방한..."
+        },
+        {
+          "link": "https://n.news.naver.com/mnews/article/052/0002266617?sid=100",
+          "title": "시진핑 만나는 날 &quot;한국 핵잠 승인&quot;...미·중 관세 '휴전'",
+          "pubDate": "Thu, 30 Oct 2025 20:56:00 +0900",
+          "trust_score": 0.6467511599000726,
+          "description": "■ 진행 : 유다원 앵커, 김명근 앵커\n■ 출연 : 석병훈 이화여대 경제학과 교수, 정한범 국방대학교 안전보장대학원 교수\n\n* 아래 텍스트는 실..."
+        },
+        {
+          "link": "https://n.news.naver.com/mnews/article/008/0005271057?sid=101",
+          "title": "관세 25%→15%, 증권가 전망도 맑은 자동차주",
+          "pubDate": "Thu, 30 Oct 2025 16:21:00 +0900",
+          "trust_score": 0.6467511599000726,
+          "description": "[오늘의 포인트]\n자동차 관세가 25%에서 경쟁국 수준인 15%로 인하되자 관련주에 화색이 돌았다.\n\n30일 거래소에서 현대차는 전 거래일 대비..."
+        },
+        {
+          "link": "https://n.news.naver.com/mnews/article/023/0003937924?sid=101",
+          "title": "美 차 업체 관세 부담 확 줄어든 까닭은...“차 부품 수입 땐 관세 환급...",
+          "pubDate": "Thu, 30 Oct 2025 17:43:00 +0900",
+          "trust_score": 0.6467511599000726,
+          "description": "[WEEKLY BIZ] [Weekly Biz 밑줄 짝] GM, 포드, 테슬라의 3분기 실적 분석\n\n\t\t\t\t\t\t\t\t\t\t미국 자동차 업계를 대표하는..."
+        },
+        {
+          "link": "https://n.news.naver.com/mnews/article/057/0001914636?sid=101",
+          "title": "테슬라, 3분기 매출은 최대인데…순이익은 37% 하락",
+          "pubDate": "Thu, 23 Oct 2025 07:24:00 +0900",
+          "trust_score": 0.42756262292958813,
+          "description": "관세·구조조정 비용 등 원인\n일론 머스크가 이끄는 전기차 업체 테슬라는 3분기(7-9월) 281억 달러(40조 2천616억 원)의 매출과 0.5..."
+        }
+      ]
+    },
+    {
+      "source": "BYD",
+      "target": "중국",
+      "weight": 0.3973151743412018,
+      "cooccurrence": 0.0,
+      "similarity": 0.7946303486824036,
+      "articles": []
+    },
+    {
+      "source": "BYD",
+      "target": "리튬",
+      "weight": 0.43024273216724396,
+      "cooccurrence": 0.0,
+      "similarity": 0.8604854643344879,
+      "articles": []
+    },
+    {
+      "source": "BYD",
+      "target": "관세",
+      "weight": 0.4337058514356613,
+      "cooccurrence": 0.0,
+      "similarity": 0.8674117028713226,
+      "articles": []
+    },
+    {
+      "source": "리튬",
+      "target": "중국",
+      "weight": 0.4248868376016617,
+      "cooccurrence": 0.0,
+      "similarity": 0.8497736752033234,
+      "articles": []
+    },
+    {
+      "source": "관세",
+      "target": "중국",
+      "weight": 0.44736677408218384,
+      "cooccurrence": 0.0,
+      "similarity": 0.8947335481643677,
+      "articles": []
+    },
+    {
+      "source": "관세",
+      "target": "리튬",
+      "weight": 0.4428205192089081,
+      "cooccurrence": 0.0,
+      "similarity": 0.8856410384178162,
+      "articles": []
+    }
+  ],
+  "metadata": {
+    "total_nodes": 5,
+    "total_edges": 10
+  }
+}

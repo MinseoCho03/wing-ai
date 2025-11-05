@@ -1,0 +1,53 @@
+runtime:
+  device: "auto"
+  seed: 42
+
+models:
+  embedding: "sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2"
+  sentiment: "snunlp/KR-FinBert-SC"
+
+embedding:
+  batch_size: 16
+  show_progress_bar: false
+
+weights:
+  alpha: 0.5
+  beta: 0.5
+
+preprocess:
+  topk_per_keyword: 20
+
+cache:
+  embedding_dir: "cache/emb_cache"
+
+sentiment:
+  filter_by_keyword: true
+  max_sentences: 5
+  min_char: 3
+  max_length: 256
+
+media_trust:
+  연합뉴스: 0.95
+  한국경제: 0.80
+  매일경제: 0.60
+  이데일리: 0.55
+  한경: 0.70
+  파이낸셜뉴스: 0.75
+  default: 0.50
+
+importance:
+  # 각 신호 가중치 (합이 1이 되도록)
+  w_trust: 0.35          # 신뢰도 합(로그) 기반
+  w_degree: 0.25         # 엣지 가중 합
+  w_pagerank: 0.25       # 가중 PageRank
+  w_novelty: 0.15        # 이웃과의 내용 차별성
+
+  use_idf: false         # IDF 보정 끔(편향 심하면 true로 올리고 강도 낮게 변경)
+  idf_strength: 0.3      # use_idf=true일 때만 반영 강도
+
+  # 메인 키워드 관련
+  main_cap: 0.45         # 메인 노드가 차지할 수 있는 최대 비중(0~1)
+  renormalize_after_cap: true  # cap 적용 후 전체 0~1 재정규화
+
+  # Novelty 계산 옵션
+  novelty_min_neighbors: 1     # 이웃이 너무 적으면 0으로 두기

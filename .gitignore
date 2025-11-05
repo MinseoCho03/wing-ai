@@ -1,0 +1,18 @@
+# virtual env
+venv/
+.env/
+__pycache__/
+*.pyc
+
+# cache
+cache/
+*.npy
+
+# system / IDE
+.DS_Store
+.vscode/
+.idea/
+
+# huggingface / model cache
+.huggingface/
+.cache/

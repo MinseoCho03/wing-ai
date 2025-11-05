@@ -1,0 +1,22 @@
+# 일반 파이썬 무시 항목
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.log
+*.pickle
+*.ipynb_checkpoints
+
+# 가상환경
+.venv/
+env/
+venv/
+
+# OS/IDE
+.DS_Store
+.vscode/
+.idea/
+
+# 캐시
+.cache/
+.huggingface/
