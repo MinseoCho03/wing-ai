@@ -18,7 +18,7 @@ pytest_cache/
 
 # 데이터/결과/모델/임시
 cache/
-data/
+#data/
 outputs/
 checkpoints/
 models/
