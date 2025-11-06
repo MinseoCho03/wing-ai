@@ -26,7 +26,7 @@ class ModelManager:
         name = self.cfg["models"]["sentiment"]
         print(f"Loading sentiment model: {name}")
         tok = AutoTokenizer.from_pretrained(name)
-        mdl = AutoModelForSequenceClassification.from_pretrained(name)
+        mdl = AutoModelForSequenceClassification.from_pretrained(name, use_safetensors=True)
 
         # ✅ CPU에서만 양자화 적용, 그 외(MPS/CUDA)는 양자화 건너뛰고 해당 디바이스로 올림
         if self.device.type == "cpu":
