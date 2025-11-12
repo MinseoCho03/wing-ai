@@ -4,7 +4,7 @@ import json
 from pathlib import Path
 
 DATA_PATH = Path(__file__).resolve().parent 
-CRAWLING_JSON = DATA_PATH / "crawling.json"
+CRAWLING_JSON = DATA_PATH / "nvidia.json"
 
 
 def load_crawling_json(path: Path) -> List[Dict]:

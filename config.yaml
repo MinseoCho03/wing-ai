@@ -4,7 +4,7 @@ runtime:
 
 models:
   embedding: "sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2"
-  sentiment: "snunlp/KR-FinBert-SC"
+  sentiment: "snunlp/KR-FinBERT-SC"
 
 embedding:
   batch_size: 16

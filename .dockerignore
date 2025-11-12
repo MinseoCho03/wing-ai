@@ -1,24 +1,23 @@
-# .dockerignore
+# VCS / 캐시 / 가상환경
 .git
 .gitignore
+.hf-cache/           # ✅ 모델 캐시: 전체 컨텍스트에서 제외 (아래에서 별도 COPY)
+venv/
+.env/
 __pycache__/
 *.pyc
 *.pyo
 *.pyd
 .DS_Store
-
-# 로컬 가상환경/툴 캐시
-venv/
-.env/
 *.egg-info/
 pip-wheel-metadata/
 .cache/
 pytest_cache/
 .mypy_cache/
 
-# 데이터/결과/모델/임시
-cache/
-#data/
+# 대용량 산출물/데이터 (필요 시 개별 COPY)
+dist/
+build/
 outputs/
 checkpoints/
 models/
@@ -29,6 +28,5 @@ models/
 *.safetensors
 *.ipynb
 
-# 빌드 산출물
-dist/
-build/
+# (선택) 런타임에 필요 없다면 데이터도 제외
+data/

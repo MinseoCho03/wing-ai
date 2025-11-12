@@ -16,3 +16,4 @@ cache/
 # huggingface / model cache
 .huggingface/
 .cache/
+.hf-cache/

@@ -1,240 +1,728 @@
 {
   "nodes": [
     {
-      "id": "관세",
+      "id": "엔비디아",
       "importance": 1.0
     },
     {
-      "id": "BYD",
-      "importance": 0.889060663111203
+      "id": "칩",
+      "importance": 0.5504504003934838
     },
     {
-      "id": "리튬",
-      "importance": 0.9235663595717322
+      "id": "한국",
+      "importance": 0.48919950527395695
     },
     {
-      "id": "테슬라",
-      "importance": 0.7292983810408136
+      "id": "데이터센터",
+      "importance": 0.5393704087610642
+    },
+    {
+      "id": "캠브리콘",
+      "importance": 0.517717478625566
+    },
+    {
+      "id": "블랙웰",
+      "importance": 0.5320748720071728
     },
     {
       "id": "중국",
-      "importance": 0.9250401273842137
+      "importance": 0.5561025037680792
+    },
+    {
+      "id": "이재용",
+      "importance": 0.49895488175194125
+    },
+    {
+      "id": "정의선",
+      "importance": 0.49787943357948516
     }
   ],
   "edges": [
     {
-      "source": "BYD",
-      "target": "테슬라",
-      "weight": 0.8659379571676254,
-      "cooccurrence": 0.8,
-      "similarity": 0.9318759143352509,
+      "source": "엔비디아",
+      "target": "이재용",
+      "weight": 0.9393911808729172,
+      "cooccurrence": 1.0,
+      "similarity": 0.8787823617458344,
       "articles": [
         {
-          "link": "https://n.news.naver.com/mnews/article/396/0000725571?sid=103",
-          "title": "전기차, 효율을 넘어 브랜드의 시대로…전삼사가 이끄는 새로운 소비 기...",
-          "pubDate": "Wed, 29 Oct 2025 16:34:00 +0900",
-          "trust_score": 0.6005909172301145,
-          "description": "Polestar 4 MY 26\n  국내 전기차 시장이 새로운 전환점에 들어섰다. 과거에는 유지비 절감과 보조금이 소비자 선택의 핵심 요인이었다...."
+          "link": "https://n.news.naver.com/mnews/article/469/0000896168?sid=102",
+          "title": "젠슨 황 만난 이재용, 이번엔 벤츠 회장...'전장' 협력 가능성↑",
+          "pubDate": "Thu, 06 Nov 2025 18:31:00 +0900",
+          "trust_score": 0.4958166638227812,
+          "description": "칼레니우스 벤츠 회장 다음 주 방한\n이재용 회장과 회동 일정 조율 중\n\n젠슨 황 엔비디아 최고경영자(CEO)와 만나 최신 '그래픽처리장치(GPU..."
         },
         {
-          "link": "https://n.news.naver.com/mnews/article/015/0005203081?sid=101",
-          "title": "재팬모빌리티쇼 30일 개막…현대차·BYD, 전기차로 격돌",
-          "pubDate": "Tue, 28 Oct 2025 15:56:00 +0900",
-          "trust_score": 0.5605756230124223,
-          "description": "'수입차의 무덤' 일본시장 공략\n\n현대차 - 수소전기차 '뉴 넥쏘' 공개\n기아 - 목적기반차량 'PV5' 데뷔\n\nBYD - 경형 전기차 세계 첫..."
+          "link": "https://n.news.naver.com/mnews/article/016/0002553435?sid=101",
+          "title": "“고맙다 깐부” 국민연금, 엔비디아 ‘덕’ 쏠쏠…美 주식투자로 3개월...",
+          "pubDate": "Thu, 06 Nov 2025 07:36:00 +0900",
+          "trust_score": 0.46974913827078,
+          "description": "美주식 552개 종목 186조원 보유…3개월새 평가액 11.2% 증가\n엔비디아서 가장 큰 수익…애플·테슬라 등 대부분 종목서 보유주식 늘려\n\n젠..."
         },
         {
-          "link": "https://n.news.naver.com/mnews/article/277/0005670297?sid=103",
-          "title": "BYD의 '중국식 혁신', 세계를 압박하다",
-          "pubDate": "Tue, 28 Oct 2025 07:00:00 +0900",
-          "trust_score": 0.5605756230124223,
-          "description": "[현대차, 오버 더 모빌리티](37)\n도요타·테슬라·BYD 등 경쟁사 분석\nBYD, 기술·생산·가격 '삼박자'로\n중국식 혁신 모델로 전기차 점유..."
+          "link": "https://n.news.naver.com/mnews/article/018/0006157269?sid=101",
+          "title": "엔비디아·삼성도 주목…폭풍질주 '코스닥 따블주' 정체는",
+          "pubDate": "Thu, 06 Nov 2025 09:17:00 +0900",
+          "trust_score": 0.46974913827078,
+          "description": "공모가 대비 7배 오른 노타, 4거래일 연속 급등[특징주][이데일리 권오석 기자] 인공지능(AI) 경량화 및 최적화 기술 기업 노타(486990..."
         },
         {
-          "link": "https://n.news.naver.com/mnews/article/023/0003936202?sid=101",
-          "title": "테슬라·미니·BYD… 중국産 전기차의 한국 공습",
-          "pubDate": "Thu, 23 Oct 2025 00:34:00 +0900",
+          "link": "https://n.news.naver.com/mnews/article/009/0005585850?sid=101",
+          "title": "“깐부회동처럼 이번에도 깜짝 결과 나올까”…이재용, 내주 벤츠 회장...",
+          "pubDate": "Thu, 06 Nov 2025 16:21:00 +0900",
+          "trust_score": 0.46974913827078,
+          "description": "이재용 삼성전자 회장이 내주 올라 칼레니우스 메르세데스-벤츠 회장을 만나는 것으로 전해졌다.\n\n6일 재계 등에 따르면 이 회장은 내주 메르세데스..."
+        },
+        {
+          "link": "https://n.news.naver.com/mnews/article/243/0000087530?sid=101",
+          "title": "&quot;그날의 치맥 그대로!&quot; 깐부치킨, 젠슨 황·이재용·정의선 회동 메뉴 '...",
+          "pubDate": "Wed, 05 Nov 2025 10:20:00 +0900",
+          "trust_score": 0.44715177646857696,
+          "description": "수익금 10% 기부까지[이코노미스트 우승민 기자] 삼성·현대차·엔비디아의 'AI 동맹 치맥 회동'이 치킨 세트로 부활했다.\n\n깐부치킨이 젠슨 황..."
+        }
+      ]
+    },
+    {
+      "source": "엔비디아",
+      "target": "한국",
+      "weight": 0.9394712299108505,
+      "cooccurrence": 1.0,
+      "similarity": 0.878942459821701,
+      "articles": [
+        {
+          "link": "https://n.news.naver.com/mnews/article/056/0012061358?sid=100",
+          "title": "김 총리 “엔비디아 GPU 26만 장 공급, 약속대로 진행될 것”",
+          "pubDate": "Thu, 06 Nov 2025 18:23:00 +0900",
+          "trust_score": 0.4958166638227812,
+          "description": "엔비디아가 한국 정부와 기업에 약속한 그래픽처리장치(GPU) 공급과 관련해 약속한 대로 진행될 것이라고 김민석 총리가 밝혔습니다.\n\n김 총리는..."
+        },
+        {
+          "link": "https://n.news.naver.com/mnews/article/421/0008589796?sid=100",
+          "title": "金총리 &quot;엔비디아 GPU 26만건 공급, 약속대로 진행될 것&quot;",
+          "pubDate": "Thu, 06 Nov 2025 16:47:00 +0900",
+          "trust_score": 0.46974913827078,
+          "description": "\"트럼프 대통령 발언 후 UAE 선적 케이스…우려는 충분히 이해\"\n\n(서울=뉴스1) 이기림 임윤지 기자 = 김민석 국무총리는 6일 엔비디아가 한..."
+        },
+        {
+          "link": "https://n.news.naver.com/mnews/article/001/0015726733?sid=102",
+          "title": "[샷!] &quot;젠슨황, 용산서 뭐든 팔려고 돌아다녔을 것&quot;",
+          "pubDate": "Thu, 06 Nov 2025 05:50:00 +0900",
+          "trust_score": 0.46974913827078,
+          "description": "젠슨 황, 1990~2000년대 용산 전자상가 찾아 GPU 영업\n상인들 \"그때는 아무것도 아니었던 사람인데 지금은…\"\n\"과거 그를 봤겠지만 유명..."
+        },
+        {
+          "link": "https://n.news.naver.com/mnews/article/366/0001120855?sid=100",
+          "title": "金총리 “엔비디아 GPU 26만장 공급 약속대로 진행될 것”",
+          "pubDate": "Thu, 06 Nov 2025 16:56:00 +0900",
+          "trust_score": 0.46974913827078,
+          "description": "김민석 국무총리는 엔비디아가 한국 정부와 기업에 약속한 그래픽처리장치(GPU) 공급과 관련해 약속대로 진행될 것이라고 밝혔다...."
+        },
+        {
+          "link": "https://n.news.naver.com/mnews/article/057/0001917359?sid=100",
+          "title": "김민석 총리 &quot;엔비디아 GPU 26만장 공급, 약속대로 진행&quot;",
+          "pubDate": "Thu, 06 Nov 2025 16:14:00 +0900",
+          "trust_score": 0.46974913827078,
+          "description": "\"블랙웰만 100% 공급 아닐수도\"\n엔비디아가 한국 정부와 기업에 공급하기로 한 그래픽처리장치(CPU) 26만 장과 관련해 김민석 국무총리가 \"..."
+        }
+      ]
+    },
+    {
+      "source": "엔비디아",
+      "target": "중국",
+      "weight": 0.9697090089321136,
+      "cooccurrence": 1.0,
+      "similarity": 0.9394180178642273,
+      "articles": [
+        {
+          "link": "https://n.news.naver.com/mnews/article/277/0005675297?sid=104",
+          "title": "젠슨 황 &quot;中, AI 경쟁서 美 상대로 승리할 것&quot;",
+          "pubDate": "Thu, 06 Nov 2025 09:03:00 +0900",
+          "trust_score": 0.46974913827078,
+          "description": "\"서방, 냉소주의…전기 무료 中과 대조적젠슨 황 엔비디아 최고경영자(CEO)가 인공지능(AI) 경쟁에서 중국이 미국을 상대로 승리할 것이라고 경..."
+        },
+        {
+          "link": "https://n.news.naver.com/mnews/article/366/0001120582?sid=104",
+          "title": "엔비디아 젠슨 황 “中, AI 경쟁에서 美 이길 것”",
+          "pubDate": "Thu, 06 Nov 2025 08:02:00 +0900",
+          "trust_score": 0.46974913827078,
+          "description": "“서방 냉소주의가 AI 발전 가로막아”\n\n        세계 1위 반도체 기업 엔비디아 최고경영자(CEO) 젠슨 황이 5일(현지시각) 중국이 낮..."
+        },
+        {
+          "link": "https://n.news.naver.com/mnews/article/214/0001460027?sid=104",
+          "title": "&quot;美, 중국시장 진출 안 하나&quot;‥젠슨황 &quot;이러면 져&quot; 직격",
+          "pubDate": "Thu, 06 Nov 2025 15:00:00 +0900",
+          "trust_score": 0.46974913827078,
+          "description": "엔비디아 최고경영자 젠슨 황이 AI 경쟁의 최종 승자는 결국 미국이 아니라 중국이 될 것이라고 전망했습니다.\n\n젠슨 황은 현지시간 5일 영국 런..."
+        },
+        {
+          "link": "https://n.news.naver.com/mnews/article/001/0015726856?sid=104",
+          "title": "첨단칩 중국 판매금지에…젠슨황 &quot;중국, AI 경쟁서 미국 제칠것&quot;",
+          "pubDate": "Thu, 06 Nov 2025 07:57:00 +0900",
+          "trust_score": 0.46974913827078,
+          "description": "\"서방, 기술 냉소주의에 빠져…전기 무료로 쓰는 중국과 대조적\"\n\n    (샌프란시스코=연합뉴스) 권영전 특파원 = 세계 1위 인공지능(AI)..."
+        },
+        {
+          "link": "https://n.news.naver.com/mnews/article/031/0000978447?sid=105",
+          "title": "젠슨 황 엔비디아 &quot;중국이 AI 경쟁에서 미국 이길 것&quot;",
+          "pubDate": "Thu, 06 Nov 2025 09:53:00 +0900",
+          "trust_score": 0.46974913827078,
+          "description": "트럼프 \"엔비디아 칩, 중국에 수출 금지\" 발언 이후 나와\n황 CEO, 미국 냉소주의 지적⋯\"더 많은 낙관주의 필요\"세계 1위 인공지능(AI)..."
+        }
+      ]
+    },
+    {
+      "source": "엔비디아",
+      "target": "칩",
+      "weight": 0.9741507768630981,
+      "cooccurrence": 1.0,
+      "similarity": 0.9483015537261963,
+      "articles": [
+        {
+          "link": "https://n.news.naver.com/mnews/article/277/0005675297?sid=104",
+          "title": "젠슨 황 &quot;中, AI 경쟁서 美 상대로 승리할 것&quot;",
+          "pubDate": "Thu, 06 Nov 2025 09:03:00 +0900",
+          "trust_score": 0.46974913827078,
+          "description": "\"서방, 냉소주의…전기 무료 中과 대조적젠슨 황 엔비디아 최고경영자(CEO)가 인공지능(AI) 경쟁에서 중국이 미국을 상대로 승리할 것이라고 경..."
+        },
+        {
+          "link": "https://n.news.naver.com/mnews/article/366/0001120582?sid=104",
+          "title": "엔비디아 젠슨 황 “中, AI 경쟁에서 美 이길 것”",
+          "pubDate": "Thu, 06 Nov 2025 08:02:00 +0900",
+          "trust_score": 0.46974913827078,
+          "description": "“서방 냉소주의가 AI 발전 가로막아”\n\n        세계 1위 반도체 기업 엔비디아 최고경영자(CEO) 젠슨 황이 5일(현지시각) 중국이 낮..."
+        },
+        {
+          "link": "https://n.news.naver.com/mnews/article/001/0015726856?sid=104",
+          "title": "첨단칩 중국 판매금지에…젠슨황 &quot;중국, AI 경쟁서 미국 제칠것&quot;",
+          "pubDate": "Thu, 06 Nov 2025 07:57:00 +0900",
+          "trust_score": 0.46974913827078,
+          "description": "\"서방, 기술 냉소주의에 빠져…전기 무료로 쓰는 중국과 대조적\"\n\n    (샌프란시스코=연합뉴스) 권영전 특파원 = 세계 1위 인공지능(AI)..."
+        },
+        {
+          "link": "https://n.news.naver.com/mnews/article/003/0013586116?sid=104",
+          "title": "[올댓차이나] 中, 국비 지원 데이터센터에 외국산 AI 칩 사용 금지",
+          "pubDate": "Thu, 06 Nov 2025 17:17:00 +0900",
+          "trust_score": 0.46974913827078,
+          "description": "[서울=뉴시스]이재준 기자 = 중국 정부가 국가 자금 지원을 받는 신규 데이터센터에서 외국산 인공지능(AI) 칩 사용을 전면 금지했다고 홍콩경제..."
+        },
+        {
+          "link": "https://n.news.naver.com/mnews/article/057/0001917239?sid=104",
+          "title": "첨단칩 중국 판매금지에…젠슨황 &quot;중국, AI서 미국 앞설 것&quot;",
+          "pubDate": "Thu, 06 Nov 2025 08:17:00 +0900",
+          "trust_score": 0.46974913827078,
+          "description": "\"서방, 기술 냉소주의에 빠져…전기 무료로 쓰는 중국과 대조적\"\n세계 1위 인공지능(AI) 칩 생산기업 엔비디아의 젠슨 황 최고경영자(CEO)가..."
+        }
+      ]
+    },
+    {
+      "source": "데이터센터",
+      "target": "엔비디아",
+      "weight": 0.9709605127573013,
+      "cooccurrence": 1.0,
+      "similarity": 0.9419210255146027,
+      "articles": [
+        {
+          "link": "https://n.news.naver.com/mnews/article/277/0005675297?sid=104",
+          "title": "젠슨 황 &quot;中, AI 경쟁서 美 상대로 승리할 것&quot;",
+          "pubDate": "Thu, 06 Nov 2025 09:03:00 +0900",
+          "trust_score": 0.46974913827078,
+          "description": "\"서방, 냉소주의…전기 무료 中과 대조적젠슨 황 엔비디아 최고경영자(CEO)가 인공지능(AI) 경쟁에서 중국이 미국을 상대로 승리할 것이라고 경..."
+        },
+        {
+          "link": "https://n.news.naver.com/mnews/article/366/0001120582?sid=104",
+          "title": "엔비디아 젠슨 황 “中, AI 경쟁에서 美 이길 것”",
+          "pubDate": "Thu, 06 Nov 2025 08:02:00 +0900",
+          "trust_score": 0.46974913827078,
+          "description": "“서방 냉소주의가 AI 발전 가로막아”\n\n        세계 1위 반도체 기업 엔비디아 최고경영자(CEO) 젠슨 황이 5일(현지시각) 중국이 낮..."
+        },
+        {
+          "link": "https://n.news.naver.com/mnews/article/018/0006157654?sid=101",
+          "title": "中, 국가 지원 데이터센터 수입 AI칩 금지…엔비디아 타격",
+          "pubDate": "Thu, 06 Nov 2025 15:16:00 +0900",
+          "trust_score": 0.46974913827078,
+          "description": "로이터, 복수 소식통 인용 보도\n\"공정률 30% 미만 데이터센터에 명령\"\n\"엔비디아 中시장 복귀 무산시키는 결정타\"[이데일리 김윤지 기자] 중국..."
+        },
+        {
+          "link": "https://n.news.naver.com/mnews/article/009/0005586017?sid=101",
+          "title": "中 &quot;데이터센터에 외국산 AI칩 다 빼라&quot;",
+          "pubDate": "Thu, 06 Nov 2025 17:57:00 +0900",
+          "trust_score": 0.46974913827078,
+          "description": "美규제 맞서 기술자립 박차\n화웨이 등 첨단칩 자급자족\n코로나 봉쇄때 기술 키웠듯\nAI 기술력 급속성장 가능성\n젠슨황 \"전력 싸고 규제 유연\n중국..."
+        },
+        {
+          "link": "https://n.news.naver.com/mnews/article/003/0013586116?sid=104",
+          "title": "[올댓차이나] 中, 국비 지원 데이터센터에 외국산 AI 칩 사용 금지",
+          "pubDate": "Thu, 06 Nov 2025 17:17:00 +0900",
+          "trust_score": 0.46974913827078,
+          "description": "[서울=뉴시스]이재준 기자 = 중국 정부가 국가 자금 지원을 받는 신규 데이터센터에서 외국산 인공지능(AI) 칩 사용을 전면 금지했다고 홍콩경제..."
+        }
+      ]
+    },
+    {
+      "source": "블랙웰",
+      "target": "엔비디아",
+      "weight": 0.9848338067531586,
+      "cooccurrence": 1.0,
+      "similarity": 0.9696676135063171,
+      "articles": [
+        {
+          "link": "https://n.news.naver.com/mnews/article/015/0005208009?sid=104",
+          "title": "트럼프가 블랙웰 수출 막았지만…젠슨 황 &quot;中, AI 경쟁서 美 앞설 것&quot;",
+          "pubDate": "Thu, 06 Nov 2025 17:37:00 +0900",
+          "trust_score": 0.46974913827078,
+          "description": "\"서방, 기술 냉소주의 빠져\"…英 'AI의 미래 서밋'서 경고\n\n美 규제·수출 통제 콕찍어 비판\n\"中기업, 보조금 받아 전기료 공짜\n중국칩, 성..."
+        },
+        {
+          "link": "https://n.news.naver.com/mnews/article/018/0006157130?sid=101",
+          "title": "“이러다 AI 경쟁서 중국이 미국 이길것”…젠슨황의 경고",
+          "pubDate": "Thu, 06 Nov 2025 07:05:00 +0900",
+          "trust_score": 0.46974913827078,
+          "description": "젠슨 황, FT ‘AI 미래 서밋’서 발언\n“中, 에너지 비용 절감·규제완화 차별점”\n“AI 규제 마련하는 서방, 낙관주의 필요”[사진=이데일리..."
+        },
+        {
+          "link": "https://n.news.naver.com/mnews/article/031/0000978447?sid=105",
+          "title": "젠슨 황 엔비디아 &quot;중국이 AI 경쟁에서 미국 이길 것&quot;",
+          "pubDate": "Thu, 06 Nov 2025 09:53:00 +0900",
+          "trust_score": 0.46974913827078,
+          "description": "트럼프 \"엔비디아 칩, 중국에 수출 금지\" 발언 이후 나와\n황 CEO, 미국 냉소주의 지적⋯\"더 많은 낙관주의 필요\"세계 1위 인공지능(AI)..."
+        },
+        {
+          "link": "https://n.news.naver.com/mnews/article/057/0001917359?sid=100",
+          "title": "김민석 총리 &quot;엔비디아 GPU 26만장 공급, 약속대로 진행&quot;",
+          "pubDate": "Thu, 06 Nov 2025 16:14:00 +0900",
+          "trust_score": 0.46974913827078,
+          "description": "\"블랙웰만 100% 공급 아닐수도\"\n엔비디아가 한국 정부와 기업에 공급하기로 한 그래픽처리장치(CPU) 26만 장과 관련해 김민석 국무총리가 \"..."
+        },
+        {
+          "link": "https://n.news.naver.com/mnews/article/001/0015724398?sid=104",
+          "title": "백악관 &quot;大法, '관세재판'서 옳은 판결할것…플랜B는 항상 준비&quot;(종합)",
+          "pubDate": "Wed, 05 Nov 2025 05:07:00 +0900",
+          "trust_score": 0.44715177646857696,
+          "description": "\"대통령은 관세 사용 비상권한 반드시 갖고 있어야\"\n\"엔비디아 최신 AI 반도체 블랙웰, 현재로선 中에 팔 생각 없어\"\n\n(워싱턴=연합뉴스) 이..."
+        }
+      ]
+    },
+    {
+      "source": "엔비디아",
+      "target": "캠브리콘",
+      "weight": 0.9768619388341904,
+      "cooccurrence": 1.0,
+      "similarity": 0.9537238776683807,
+      "articles": [
+        {
+          "link": "https://n.news.naver.com/mnews/article/003/0013586093?sid=104",
+          "title": "‘중국판 엔비디아’ 캠브리콘 주가 또 마오타이 추월",
+          "pubDate": "Thu, 06 Nov 2025 17:09:00 +0900",
+          "trust_score": 0.46974913827078,
+          "description": "외국 AI칩 퇴출설에 급등…AI 훈풍에 선두 복귀[서울=뉴시스] 문예성 기자 = 중국 인공지능(AI) 관련 종목들이 강세를 이어가는 가운데, ‘..."
+        },
+        {
+          "link": "https://n.news.naver.com/mnews/article/366/0001120706?sid=105",
+          "title": "中, 정부 데이터센터서 ‘외국산 AI 칩’ 전면 퇴출령… 기술 독립 초강...",
+          "pubDate": "Thu, 06 Nov 2025 13:19:00 +0900",
+          "trust_score": 0.46974913827078,
+          "description": "국가 자금 투입 데이터센터에 중국산 칩만 허용\n화웨이·캠브리콘 등 토종 칩 부상\n“中 AI 칩 자급률 80% 목표 앞당겨질 듯”..."
+        },
+        {
+          "link": "https://n.news.naver.com/mnews/article/138/0002208921?sid=105",
+          "title": "GPU 제국 엔비디아, AI시대 '중앙은행'…韓 AI 주권 지킬 '방패' 어디에",
+          "pubDate": "Thu, 06 Nov 2025 15:48:00 +0900",
+          "trust_score": 0.46974913827078,
+          "description": "[인더AI] AI 권력의 피라미드…주권의 무게를 묻다\n\n[디지털데일리 김문기 기자] 26만 장의 GPU를 들여올 예정인 우리나라는 엔비디아라는..."
+        },
+        {
+          "link": "https://n.news.naver.com/mnews/article/031/0000978447?sid=105",
+          "title": "젠슨 황 엔비디아 &quot;중국이 AI 경쟁에서 미국 이길 것&quot;",
+          "pubDate": "Thu, 06 Nov 2025 09:53:00 +0900",
+          "trust_score": 0.46974913827078,
+          "description": "트럼프 \"엔비디아 칩, 중국에 수출 금지\" 발언 이후 나와\n황 CEO, 미국 냉소주의 지적⋯\"더 많은 낙관주의 필요\"세계 1위 인공지능(AI)..."
+        },
+        {
+          "link": "https://n.news.naver.com/mnews/article/023/0003938897?sid=105",
+          "title": "中, “화웨이 칩 쓰면 전기료 반값”...엔비디아 견제",
+          "pubDate": "Tue, 04 Nov 2025 17:42:00 +0900",
           "trust_score": 0.42756262292958813,
-          "description": "올 들어 5만대 판매… 작년의 두 배\n\t\t\t\t\t\t\t올해 한국에서 팔린 전기차 3대 중 1대는 중국산이다. 22일 한국자동차모빌리티산업협회(KAM..."
+          "description": "중국이 자국 반도체를 사용하는 데이터센터의 전기 요금을 절반까지 감면해주는 제도를 도입했다. 중국은 엔비디아 반도체 의존도를 줄이기 위해 자국..."
+        }
+      ]
+    },
+    {
+      "source": "엔비디아",
+      "target": "정의선",
+      "weight": 0.9423203468322754,
+      "cooccurrence": 1.0,
+      "similarity": 0.8846406936645508,
+      "articles": [
+        {
+          "link": "https://n.news.naver.com/mnews/article/016/0002553435?sid=101",
+          "title": "“고맙다 깐부” 국민연금, 엔비디아 ‘덕’ 쏠쏠…美 주식투자로 3개월...",
+          "pubDate": "Thu, 06 Nov 2025 07:36:00 +0900",
+          "trust_score": 0.46974913827078,
+          "description": "美주식 552개 종목 186조원 보유…3개월새 평가액 11.2% 증가\n엔비디아서 가장 큰 수익…애플·테슬라 등 대부분 종목서 보유주식 늘려\n\n젠..."
+        },
+        {
+          "link": "https://n.news.naver.com/mnews/article/145/0000022618?sid=103",
+          "title": "젠슨황·이재용·정의선···AI치맥 회동 치킨 세트 나왔다",
+          "pubDate": "Thu, 06 Nov 2025 08:16:00 +0900",
+          "trust_score": 0.46974913827078,
+          "description": "삼성 이재용·현대차 정의선·엔비디아 젠슨황의 ‘AI 동맹 치맥 회동’이 치킨 세트로 출시됐다.\n\n깐부치킨은 젠슨 황 엔비디아 CEO, 이재용 삼..."
+        },
+        {
+          "link": "https://n.news.naver.com/mnews/article/015/0005206995?sid=103",
+          "title": "'젠슨황·이재용·정의선' 회장님 입맛 그대로…메뉴 내놨더니",
+          "pubDate": "Tue, 04 Nov 2025 19:01:00 +0900",
+          "trust_score": 0.44715177646857696,
+          "description": "깐부치킨 ‘AI깐부’ 출시\n빙그레도 젠슨 황 효과 '톡톡'…바나나우유 마케팅\n젠슨 황 엔비디아 최고경영자(CEO)와 이재용 삼성전자 회장, 정의..."
+        },
+        {
+          "link": "https://n.news.naver.com/mnews/article/032/0003406651?sid=101",
+          "title": "젠슨 황·이재용·정의선 ‘깐부’ 셋이 먹은 메뉴 ‘AI 세트’로 나왔...",
+          "pubDate": "Tue, 04 Nov 2025 21:06:00 +0900",
+          "trust_score": 0.44715177646857696,
+          "description": "‘바삭한 식스팩’ ‘크리스피 순살’ ‘치즈스틱’···'AI깐부' 메뉴 출시\n삼성역 치킨 매장 손님 몰려 자리 경쟁에 “1시간만 이용 가능”\n젠슨..."
+        },
+        {
+          "link": "https://n.news.naver.com/mnews/article/243/0000087530?sid=101",
+          "title": "&quot;그날의 치맥 그대로!&quot; 깐부치킨, 젠슨 황·이재용·정의선 회동 메뉴 '...",
+          "pubDate": "Wed, 05 Nov 2025 10:20:00 +0900",
+          "trust_score": 0.44715177646857696,
+          "description": "수익금 10% 기부까지[이코노미스트 우승민 기자] 삼성·현대차·엔비디아의 'AI 동맹 치맥 회동'이 치킨 세트로 부활했다.\n\n깐부치킨이 젠슨 황..."
+        }
+      ]
+    },
+    {
+      "source": "이재용",
+      "target": "한국",
+      "weight": 0.4220433831214905,
+      "cooccurrence": 0.0,
+      "similarity": 0.844086766242981,
+      "articles": []
+    },
+    {
+      "source": "이재용",
+      "target": "중국",
+      "weight": 0.3769519627094269,
+      "cooccurrence": 0.0,
+      "similarity": 0.7539039254188538,
+      "articles": []
+    },
+    {
+      "source": "이재용",
+      "target": "칩",
+      "weight": 0.372382752597332,
+      "cooccurrence": 0.0,
+      "similarity": 0.744765505194664,
+      "articles": []
+    },
+    {
+      "source": "데이터센터",
+      "target": "이재용",
+      "weight": 0.35749225318431854,
+      "cooccurrence": 0.0,
+      "similarity": 0.7149845063686371,
+      "articles": []
+    },
+    {
+      "source": "블랙웰",
+      "target": "이재용",
+      "weight": 0.40675100684165955,
+      "cooccurrence": 0.0,
+      "similarity": 0.8135020136833191,
+      "articles": []
+    },
+    {
+      "source": "이재용",
+      "target": "캠브리콘",
+      "weight": 0.3767313212156296,
+      "cooccurrence": 0.0,
+      "similarity": 0.7534626424312592,
+      "articles": []
+    },
+    {
+      "source": "이재용",
+      "target": "정의선",
+      "weight": 0.6771675765514373,
+      "cooccurrence": 0.4,
+      "similarity": 0.9543351531028748,
+      "articles": [
+        {
+          "link": "https://n.news.naver.com/mnews/article/016/0002553435?sid=101",
+          "title": "“고맙다 깐부” 국민연금, 엔비디아 ‘덕’ 쏠쏠…美 주식투자로 3개월...",
+          "pubDate": "Thu, 06 Nov 2025 07:36:00 +0900",
+          "trust_score": 0.46974913827078,
+          "description": "美주식 552개 종목 186조원 보유…3개월새 평가액 11.2% 증가\n엔비디아서 가장 큰 수익…애플·테슬라 등 대부분 종목서 보유주식 늘려\n\n젠..."
+        },
+        {
+          "link": "https://n.news.naver.com/mnews/article/243/0000087530?sid=101",
+          "title": "&quot;그날의 치맥 그대로!&quot; 깐부치킨, 젠슨 황·이재용·정의선 회동 메뉴 '...",
+          "pubDate": "Wed, 05 Nov 2025 10:20:00 +0900",
+          "trust_score": 0.44715177646857696,
+          "description": "수익금 10% 기부까지[이코노미스트 우승민 기자] 삼성·현대차·엔비디아의 'AI 동맹 치맥 회동'이 치킨 세트로 부활했다.\n\n깐부치킨이 젠슨 황..."
         }
       ]
     },
     {
       "source": "중국",
-      "target": "테슬라",
-      "weight": 0.8643989503383637,
-      "cooccurrence": 0.8,
-      "similarity": 0.9287979006767273,
+      "target": "한국",
+      "weight": 0.36257025599479675,
+      "cooccurrence": 0.0,
+      "similarity": 0.7251405119895935,
+      "articles": []
+    },
+    {
+      "source": "칩",
+      "target": "한국",
+      "weight": 0.36819902062416077,
+      "cooccurrence": 0.0,
+      "similarity": 0.7363980412483215,
+      "articles": []
+    },
+    {
+      "source": "데이터센터",
+      "target": "한국",
+      "weight": 0.37140482664108276,
+      "cooccurrence": 0.0,
+      "similarity": 0.7428096532821655,
+      "articles": []
+    },
+    {
+      "source": "블랙웰",
+      "target": "한국",
+      "weight": 0.5195380508899688,
+      "cooccurrence": 0.2,
+      "similarity": 0.8390761017799377,
       "articles": [
         {
-          "link": "https://n.news.naver.com/mnews/article/014/0005427476?sid=101",
-          "title": "[뉴욕증시] 메타 급락세 속 3대 지수 일제히 하락…테슬라·엔비디아 동...",
-          "pubDate": "Fri, 31 Oct 2025 05:52:00 +0900",
-          "trust_score": 0.7,
-          "description": "[파이낸셜뉴스]\n\n뉴욕 증시 3대 지수가 30일(현지시간) 일제히 하락했다.\n\n전날까지 거래일 기준으로 나흘 내리 사상 최고 행진을 이어갔던 나..."
-        },
-        {
-          "link": "https://n.news.naver.com/mnews/article/374/0000471931?sid=104",
-          "title": "테슬라, 내달 상하이서 사이버캡 공개…아시아 시장 첫 데뷔",
-          "pubDate": "Fri, 31 Oct 2025 04:22:00 +0900",
-          "trust_score": 0.7,
-          "description": "테슬라가 자율주행 전용 로보택시 모델인 사이버캡을 오는 11월 5일부터 10일까지 중국 상하이에서 열리는 '중국 국제수입 박람회' (China..."
-        },
-        {
-          "link": "https://n.news.naver.com/mnews/article/008/0005270487?sid=101",
-          "title": "미국은 '뇌'·중국은 '눈' 싹쓸이…손발 묶인 K-자율주행, 부품서도 밀린...",
-          "pubDate": "Thu, 30 Oct 2025 08:00:00 +0900",
-          "trust_score": 0.6467511599000726,
-          "description": "[MT리포트] 속도 못내는 K-자율주행 (下)[편집자주] 미국과 중국은 자율주행 상용화를 가속화하며 도로 위에서 '모빌리티 산업의 미래'를 실현..."
-        },
-        {
-          "link": "https://n.news.naver.com/mnews/article/018/0006148192?sid=101",
-          "title": "서학개미, 테슬라 대신 SPY 샀다…3분기 외화증권 보관액 2203억달러",
-          "pubDate": "Mon, 27 Oct 2025 10:42:00 +0900",
-          "trust_score": 0.5258872488031037,
-          "description": "예탁원 “3분기 외화증권 보관액 전년비 60% 증가”\n전분기와 비교해도 19% 늘어…보관액 1위는 테슬라\n외화증권 결제액 15% 증가…사고 판..."
+          "link": "https://n.news.naver.com/mnews/article/057/0001917359?sid=100",
+          "title": "김민석 총리 &quot;엔비디아 GPU 26만장 공급, 약속대로 진행&quot;",
+          "pubDate": "Thu, 06 Nov 2025 16:14:00 +0900",
+          "trust_score": 0.46974913827078,
+          "description": "\"블랙웰만 100% 공급 아닐수도\"\n엔비디아가 한국 정부와 기업에 공급하기로 한 그래픽처리장치(CPU) 26만 장과 관련해 김민석 국무총리가 \"..."
         }
       ]
     },
     {
-      "source": "리튬",
-      "target": "테슬라",
-      "weight": 0.9736069887876511,
-      "cooccurrence": 1.0,
-      "similarity": 0.9472139775753021,
+      "source": "캠브리콘",
+      "target": "한국",
+      "weight": 0.396772637963295,
+      "cooccurrence": 0.0,
+      "similarity": 0.79354527592659,
+      "articles": []
+    },
+    {
+      "source": "정의선",
+      "target": "한국",
+      "weight": 0.40663839876651764,
+      "cooccurrence": 0.0,
+      "similarity": 0.8132767975330353,
+      "articles": []
+    },
+    {
+      "source": "중국",
+      "target": "칩",
+      "weight": 0.7946312755346299,
+      "cooccurrence": 0.6,
+      "similarity": 0.9892625510692596,
       "articles": [
         {
-          "link": "https://n.news.naver.com/mnews/article/293/0000074004?sid=101",
-          "title": "국토부, '테슬라 BMS_a079 오류' 리콜 소극적...&quot;민원 거의 없다&quot;",
-          "pubDate": "Fri, 24 Oct 2025 15:50:00 +0900",
-          "trust_score": 0.44715177646857696,
-          "description": "국토교통부가 테슬라 'BMS_a079' 오류와 관련된 국내 오너들의 불만이 확산된 상황에서 리콜 조치에 소극적이었던 것으로 나타났다. 국회뿐 아..."
+          "link": "https://n.news.naver.com/mnews/article/277/0005675297?sid=104",
+          "title": "젠슨 황 &quot;中, AI 경쟁서 美 상대로 승리할 것&quot;",
+          "pubDate": "Thu, 06 Nov 2025 09:03:00 +0900",
+          "trust_score": 0.46974913827078,
+          "description": "\"서방, 냉소주의…전기 무료 中과 대조적젠슨 황 엔비디아 최고경영자(CEO)가 인공지능(AI) 경쟁에서 중국이 미국을 상대로 승리할 것이라고 경..."
         },
         {
-          "link": "https://n.news.naver.com/mnews/article/024/0000100808?sid=102",
-          "title": "한국산 배터리로 무장한 폴스타5...“테슬라·포르쉐, 그동안 애썼다”...",
-          "pubDate": "Fri, 24 Oct 2025 21:01:00 +0900",
-          "trust_score": 0.44715177646857696,
-          "description": "스웨덴 출신 전기차 브랜드인 폴스타가 ‘고성능차의 대명사’ 포르쉐에 맞설 전기차를 내년에 한국에 가져온다. 폴스타는 지난달 9일(현지시간) 독일..."
+          "link": "https://n.news.naver.com/mnews/article/366/0001120582?sid=104",
+          "title": "엔비디아 젠슨 황 “中, AI 경쟁에서 美 이길 것”",
+          "pubDate": "Thu, 06 Nov 2025 08:02:00 +0900",
+          "trust_score": 0.46974913827078,
+          "description": "“서방 냉소주의가 AI 발전 가로막아”\n\n        세계 1위 반도체 기업 엔비디아 최고경영자(CEO) 젠슨 황이 5일(현지시각) 중국이 낮..."
         },
         {
-          "link": "https://n.news.naver.com/mnews/article/008/0005267292?sid=101",
-          "title": "&quot;2차전지 구조대 기다렸는데&quot;…테슬라 실적 부진에 '급브레이크'",
-          "pubDate": "Thu, 23 Oct 2025 15:55:00 +0900",
-          "trust_score": 0.42756262292958813,
-          "description": "에코프로 6% 하락…\"전기차 배터리 수요 둔화\"질주하던 2차전지 주에 제동이 걸렸다. 테슬라가 컨센서스를 밑도는 순이익을 기록하며 하락하자, 국..."
-        },
-        {
-          "link": "https://n.news.naver.com/mnews/article/016/0002546020?sid=101",
-          "title": "테슬라, 역대 최대 매출에도 순익 37% 급감…요즘 불장 K-이차전지 때 이...",
-          "pubDate": "Thu, 23 Oct 2025 09:29:00 +0900",
-          "trust_score": 0.42756262292958813,
-          "description": "테슬라 3Q 매출 281억弗…전년比 7% 증가 ‘역대 최대’\nEPS는 0.50弗로 시장 전망 하회…전체 순익 13.7억弗 ‘전년比 37% ↓’..."
-        },
-        {
-          "link": "https://n.news.naver.com/mnews/article/025/0003476527?sid=101",
-          "title": "&quot;2815만원 수리비 폭탄&quot; 韓소비자 뒤통수치는 테슬라 배터리 논란",
-          "pubDate": "Mon, 20 Oct 2025 18:12:00 +0900",
-          "trust_score": 0.38309927485744033,
-          "description": "#충남 홍성에 사는 A씨는 지난 8월 2021년식 테슬라 모델3 롱레인지를 타던 중 센터디스플레이에 ‘BMS_a079, 충전 불가. 정비 예약하..."
+          "link": "https://n.news.naver.com/mnews/article/001/0015726856?sid=104",
+          "title": "첨단칩 중국 판매금지에…젠슨황 &quot;중국, AI 경쟁서 미국 제칠것&quot;",
+          "pubDate": "Thu, 06 Nov 2025 07:57:00 +0900",
+          "trust_score": 0.46974913827078,
+          "description": "\"서방, 기술 냉소주의에 빠져…전기 무료로 쓰는 중국과 대조적\"\n\n    (샌프란시스코=연합뉴스) 권영전 특파원 = 세계 1위 인공지능(AI)..."
         }
       ]
     },
     {
-      "source": "관세",
-      "target": "테슬라",
-      "weight": 0.9835360050201416,
-      "cooccurrence": 1.0,
-      "similarity": 0.9670720100402832,
+      "source": "데이터센터",
+      "target": "중국",
+      "weight": 0.6770662784576416,
+      "cooccurrence": 0.4,
+      "similarity": 0.9541325569152832,
       "articles": [
         {
-          "link": "https://n.news.naver.com/mnews/article/001/0015711065?sid=101",
-          "title": "삼성증권 &quot;현대차, 한미협상 타결로 내년 관세 7천800억원 감소&quot;",
-          "pubDate": "Thu, 30 Oct 2025 08:46:00 +0900",
-          "trust_score": 0.6467511599000726,
-          "description": "\"실적 피크아웃 논란 불식 전망…저평가 해소시 40만원도 가능\"\n\n(서울=연합뉴스) 황철환 기자 = 삼성증권은 도널드 트럼프 미국 대통령의 방한..."
+          "link": "https://n.news.naver.com/mnews/article/277/0005675297?sid=104",
+          "title": "젠슨 황 &quot;中, AI 경쟁서 美 상대로 승리할 것&quot;",
+          "pubDate": "Thu, 06 Nov 2025 09:03:00 +0900",
+          "trust_score": 0.46974913827078,
+          "description": "\"서방, 냉소주의…전기 무료 中과 대조적젠슨 황 엔비디아 최고경영자(CEO)가 인공지능(AI) 경쟁에서 중국이 미국을 상대로 승리할 것이라고 경..."
         },
         {
-          "link": "https://n.news.naver.com/mnews/article/052/0002266617?sid=100",
-          "title": "시진핑 만나는 날 &quot;한국 핵잠 승인&quot;...미·중 관세 '휴전'",
-          "pubDate": "Thu, 30 Oct 2025 20:56:00 +0900",
-          "trust_score": 0.6467511599000726,
-          "description": "■ 진행 : 유다원 앵커, 김명근 앵커\n■ 출연 : 석병훈 이화여대 경제학과 교수, 정한범 국방대학교 안전보장대학원 교수\n\n* 아래 텍스트는 실..."
-        },
-        {
-          "link": "https://n.news.naver.com/mnews/article/008/0005271057?sid=101",
-          "title": "관세 25%→15%, 증권가 전망도 맑은 자동차주",
-          "pubDate": "Thu, 30 Oct 2025 16:21:00 +0900",
-          "trust_score": 0.6467511599000726,
-          "description": "[오늘의 포인트]\n자동차 관세가 25%에서 경쟁국 수준인 15%로 인하되자 관련주에 화색이 돌았다.\n\n30일 거래소에서 현대차는 전 거래일 대비..."
-        },
-        {
-          "link": "https://n.news.naver.com/mnews/article/023/0003937924?sid=101",
-          "title": "美 차 업체 관세 부담 확 줄어든 까닭은...“차 부품 수입 땐 관세 환급...",
-          "pubDate": "Thu, 30 Oct 2025 17:43:00 +0900",
-          "trust_score": 0.6467511599000726,
-          "description": "[WEEKLY BIZ] [Weekly Biz 밑줄 짝] GM, 포드, 테슬라의 3분기 실적 분석\n\n\t\t\t\t\t\t\t\t\t\t미국 자동차 업계를 대표하는..."
-        },
-        {
-          "link": "https://n.news.naver.com/mnews/article/057/0001914636?sid=101",
-          "title": "테슬라, 3분기 매출은 최대인데…순이익은 37% 하락",
-          "pubDate": "Thu, 23 Oct 2025 07:24:00 +0900",
-          "trust_score": 0.42756262292958813,
-          "description": "관세·구조조정 비용 등 원인\n일론 머스크가 이끄는 전기차 업체 테슬라는 3분기(7-9월) 281억 달러(40조 2천616억 원)의 매출과 0.5..."
+          "link": "https://n.news.naver.com/mnews/article/366/0001120582?sid=104",
+          "title": "엔비디아 젠슨 황 “中, AI 경쟁에서 美 이길 것”",
+          "pubDate": "Thu, 06 Nov 2025 08:02:00 +0900",
+          "trust_score": 0.46974913827078,
+          "description": "“서방 냉소주의가 AI 발전 가로막아”\n\n        세계 1위 반도체 기업 엔비디아 최고경영자(CEO) 젠슨 황이 5일(현지시각) 중국이 낮..."
         }
       ]
     },
     {
-      "source": "BYD",
+      "source": "블랙웰",
       "target": "중국",
-      "weight": 0.3973151743412018,
-      "cooccurrence": 0.0,
-      "similarity": 0.7946303486824036,
-      "articles": []
+      "weight": 0.5752116054296493,
+      "cooccurrence": 0.2,
+      "similarity": 0.9504232108592987,
+      "articles": [
+        {
+          "link": "https://n.news.naver.com/mnews/article/031/0000978447?sid=105",
+          "title": "젠슨 황 엔비디아 &quot;중국이 AI 경쟁에서 미국 이길 것&quot;",
+          "pubDate": "Thu, 06 Nov 2025 09:53:00 +0900",
+          "trust_score": 0.46974913827078,
+          "description": "트럼프 \"엔비디아 칩, 중국에 수출 금지\" 발언 이후 나와\n황 CEO, 미국 냉소주의 지적⋯\"더 많은 낙관주의 필요\"세계 1위 인공지능(AI)..."
+        }
+      ]
     },
     {
-      "source": "BYD",
-      "target": "리튬",
-      "weight": 0.43024273216724396,
-      "cooccurrence": 0.0,
-      "similarity": 0.8604854643344879,
-      "articles": []
+      "source": "중국",
+      "target": "캠브리콘",
+      "weight": 0.5630707055330276,
+      "cooccurrence": 0.2,
+      "similarity": 0.9261414110660553,
+      "articles": [
+        {
+          "link": "https://n.news.naver.com/mnews/article/031/0000978447?sid=105",
+          "title": "젠슨 황 엔비디아 &quot;중국이 AI 경쟁에서 미국 이길 것&quot;",
+          "pubDate": "Thu, 06 Nov 2025 09:53:00 +0900",
+          "trust_score": 0.46974913827078,
+          "description": "트럼프 \"엔비디아 칩, 중국에 수출 금지\" 발언 이후 나와\n황 CEO, 미국 냉소주의 지적⋯\"더 많은 낙관주의 필요\"세계 1위 인공지능(AI)..."
+        }
+      ]
     },
     {
-      "source": "BYD",
-      "target": "관세",
-      "weight": 0.4337058514356613,
-      "cooccurrence": 0.0,
-      "similarity": 0.8674117028713226,
-      "articles": []
-    },
-    {
-      "source": "리튬",
+      "source": "정의선",
       "target": "중국",
-      "weight": 0.4248868376016617,
+      "weight": 0.38392430543899536,
       "cooccurrence": 0.0,
-      "similarity": 0.8497736752033234,
+      "similarity": 0.7678486108779907,
       "articles": []
     },
     {
-      "source": "관세",
-      "target": "중국",
-      "weight": 0.44736677408218384,
+      "source": "데이터센터",
+      "target": "칩",
+      "weight": 0.7877348840236664,
+      "cooccurrence": 0.6,
+      "similarity": 0.9754697680473328,
+      "articles": [
+        {
+          "link": "https://n.news.naver.com/mnews/article/277/0005675297?sid=104",
+          "title": "젠슨 황 &quot;中, AI 경쟁서 美 상대로 승리할 것&quot;",
+          "pubDate": "Thu, 06 Nov 2025 09:03:00 +0900",
+          "trust_score": 0.46974913827078,
+          "description": "\"서방, 냉소주의…전기 무료 中과 대조적젠슨 황 엔비디아 최고경영자(CEO)가 인공지능(AI) 경쟁에서 중국이 미국을 상대로 승리할 것이라고 경..."
+        },
+        {
+          "link": "https://n.news.naver.com/mnews/article/366/0001120582?sid=104",
+          "title": "엔비디아 젠슨 황 “中, AI 경쟁에서 美 이길 것”",
+          "pubDate": "Thu, 06 Nov 2025 08:02:00 +0900",
+          "trust_score": 0.46974913827078,
+          "description": "“서방 냉소주의가 AI 발전 가로막아”\n\n        세계 1위 반도체 기업 엔비디아 최고경영자(CEO) 젠슨 황이 5일(현지시각) 중국이 낮..."
+        },
+        {
+          "link": "https://n.news.naver.com/mnews/article/003/0013586116?sid=104",
+          "title": "[올댓차이나] 中, 국비 지원 데이터센터에 외국산 AI 칩 사용 금지",
+          "pubDate": "Thu, 06 Nov 2025 17:17:00 +0900",
+          "trust_score": 0.46974913827078,
+          "description": "[서울=뉴시스]이재준 기자 = 중국 정부가 국가 자금 지원을 받는 신규 데이터센터에서 외국산 인공지능(AI) 칩 사용을 전면 금지했다고 홍콩경제..."
+        }
+      ]
+    },
+    {
+      "source": "블랙웰",
+      "target": "칩",
+      "weight": 0.47385840117931366,
       "cooccurrence": 0.0,
-      "similarity": 0.8947335481643677,
+      "similarity": 0.9477168023586273,
       "articles": []
     },
     {
-      "source": "관세",
-      "target": "리튬",
-      "weight": 0.4428205192089081,
+      "source": "칩",
+      "target": "캠브리콘",
+      "weight": 0.4745277166366577,
       "cooccurrence": 0.0,
-      "similarity": 0.8856410384178162,
+      "similarity": 0.9490554332733154,
+      "articles": []
+    },
+    {
+      "source": "정의선",
+      "target": "칩",
+      "weight": 0.382559597492218,
+      "cooccurrence": 0.0,
+      "similarity": 0.765119194984436,
+      "articles": []
+    },
+    {
+      "source": "데이터센터",
+      "target": "블랙웰",
+      "weight": 0.46350163221359253,
+      "cooccurrence": 0.0,
+      "similarity": 0.9270032644271851,
+      "articles": []
+    },
+    {
+      "source": "데이터센터",
+      "target": "캠브리콘",
+      "weight": 0.4821959435939789,
+      "cooccurrence": 0.0,
+      "similarity": 0.9643918871879578,
+      "articles": []
+    },
+    {
+      "source": "데이터센터",
+      "target": "정의선",
+      "weight": 0.3692115992307663,
+      "cooccurrence": 0.0,
+      "similarity": 0.7384231984615326,
+      "articles": []
+    },
+    {
+      "source": "블랙웰",
+      "target": "캠브리콘",
+      "weight": 0.5574008882045746,
+      "cooccurrence": 0.2,
+      "similarity": 0.9148017764091492,
+      "articles": [
+        {
+          "link": "https://n.news.naver.com/mnews/article/031/0000978447?sid=105",
+          "title": "젠슨 황 엔비디아 &quot;중국이 AI 경쟁에서 미국 이길 것&quot;",
+          "pubDate": "Thu, 06 Nov 2025 09:53:00 +0900",
+          "trust_score": 0.46974913827078,
+          "description": "트럼프 \"엔비디아 칩, 중국에 수출 금지\" 발언 이후 나와\n황 CEO, 미국 냉소주의 지적⋯\"더 많은 낙관주의 필요\"세계 1위 인공지능(AI)..."
+        }
+      ]
+    },
+    {
+      "source": "블랙웰",
+      "target": "정의선",
+      "weight": 0.41067394614219666,
+      "cooccurrence": 0.0,
+      "similarity": 0.8213478922843933,
+      "articles": []
+    },
+    {
+      "source": "정의선",
+      "target": "캠브리콘",
+      "weight": 0.38517865538597107,
+      "cooccurrence": 0.0,
+      "similarity": 0.7703573107719421,
       "articles": []
     }
   ],
   "metadata": {
-    "total_nodes": 5,
-    "total_edges": 10
+    "total_nodes": 9,
+    "total_edges": 36
   }
 }
