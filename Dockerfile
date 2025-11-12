@@ -19,7 +19,14 @@ COPY requirements.txt .
 RUN pip install --no-cache-dir --index-url https://download.pytorch.org/whl/cpu torch==2.3.1
 RUN pip install --no-cache-dir -r requirements.txt
 
-# ✅ 로컬 캐시만 주입 (컨텍스트에서 제외되어 있어도 이 라인으로만 전송됨)
+
+# Hugging Face 캐시 경로
+ENV HF_HOME=/opt/hf-cache
+
+# 캐시 폴더 보장
+RUN mkdir -p /opt/hf-cache && chmod -R 777 /opt/hf-cache
+
+# 로컬 캐시 주입 (있으면 복사되어 cold start ↓)
 COPY .hf-cache/ /opt/hf-cache/
 
 # ✅ 앱 파일을 명시적으로만 복사 (중복/대용량 방지)

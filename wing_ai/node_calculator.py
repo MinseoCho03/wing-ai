@@ -1,7 +1,5 @@
 # -*- coding: utf-8 -*-
 """
-node_importance_calculator.py — novelty 제거본
-
 핵심 변경사항
 - S4(novelty) 완전 제거. 중요도는 S1(trust) + S2(weighted degree) + S3(weighted PageRank)만 사용.
 - 기본 가중치: trust 0.4, degree 0.3, pagerank 0.3.

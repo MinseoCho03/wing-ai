@@ -4,7 +4,7 @@ import json
 import numpy as np
 from typing import Dict
 from wing_ai.pipeline import WINGAIPipeline
-from data.demo_data import DEMO_DATA  # <- 당신이 만든 위치 기준으로 맞춰주세요
+from data.demo_data import DEMO_DATA
 
 def convert_to_serializable(obj):
     if isinstance(obj, np.ndarray):

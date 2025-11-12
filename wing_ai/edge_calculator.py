@@ -60,7 +60,6 @@ class EdgeWeightCalculator:
                 'title': a.get('title', ''),
                 'pubDate': a.get('pubDate', ''),
                 'trust_score': a.get('trust_score', 0.0),
-                # ← 여기 추가
                 'description': self._make_snippet(a)
             })
 
