@@ -40,4 +40,5 @@ COPY config.yaml ./config.yaml
 COPY wing_ai ./wing_ai
 EXPOSE 8000
 
-CMD ["uvicorn", "app:app", "--host", "0.0.0.0", "--port", "8000", "--workers", "1"]
+CMD ["sh", "-c", "uvicorn app:app --host 0.0.0.0 --port ${PORT:-8000} --workers 1"]
+
