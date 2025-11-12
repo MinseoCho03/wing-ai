@@ -5,8 +5,16 @@ from typing import Any, Dict, List, Optional
 import time
 import torch
 import numpy as np
+import os
 
 from wing_ai.pipeline import WINGAIPipeline
+
+# ---------------------------------------------------------
+# 환경 변수 세팅 (Dockerfile과 일치)
+# ---------------------------------------------------------
+os.environ.setdefault("HF_HOME", "/opt/hf-cache")
+os.environ.setdefault("TRANSFORMERS_OFFLINE", "1")
+os.environ.setdefault("HF_HUB_OFFLINE", "1")
 
 app = FastAPI(title="WING AI API", version="0.1.4")
 
@@ -16,15 +24,10 @@ app = FastAPI(title="WING AI API", version="0.1.4")
 pipeline: Optional[WINGAIPipeline] = None
 _ready: bool = False
 
-
 # ---------------------------------------------------------
 # Helpers
 # ---------------------------------------------------------
 def _build_articles_by_keyword(results_list: List[Dict]) -> Dict[str, List[Dict[str, Any]]]:
-    """
-    payload.results[].items[] -> {query: [article, ...]}
-    입력 페이로드의 'query'를 키로 묶어 파이프라인이 기대하는 형태로 변환.
-    """
     out: Dict[str, List[Dict[str, Any]]] = {}
     for block in results_list:
         kw = block.get("query")
@@ -44,9 +47,6 @@ def _build_articles_by_keyword(results_list: List[Dict]) -> Dict[str, List[Dict[
 
 
 def _to_py(obj):
-    """
-    numpy/ndarray 등을 JSON 직렬화 가능한 파이썬 기본 타입으로 변환
-    """
     if isinstance(obj, np.ndarray):
         return obj.tolist()
     if isinstance(obj, (np.floating,)):
@@ -63,7 +63,7 @@ def _to_py(obj):
 
 
 # ---------------------------------------------------------
-# Schemas (출력 순서까지 JSON과 동일하게 맞춤)
+# Schemas
 # ---------------------------------------------------------
 class CrawlingItem(BaseModel):
     model_config = ConfigDict(extra='ignore')
@@ -101,7 +101,6 @@ class GraphNode(BaseModel):
 
 class GraphEdge(BaseModel):
     model_config = ConfigDict(extra='allow')
-    # 필드 순서 = 최종 JSON 순서
     source: str
     target: str
     weight: Optional[float] = None
@@ -139,7 +138,7 @@ def load_pipeline():
     try:
         pipeline = WINGAIPipeline(config_path="config.yaml")
 
-        # 모델 로드/웜업
+        # 모델 로드/웜업 (이미 캐시가 bake-in 되어있어 매우 빠름)
         pipeline._ensure_embedding_model_loaded()
         pipeline._ensure_sentiment_model_loaded()
 
@@ -174,22 +173,15 @@ def health():
 # ---------------------------------------------------------
 @app.post("/process", response_model=GraphResponse)
 def process_news(payload: CrawlingPayload, mode: str = "investment"):
-    """
-    입력: demo 크롤링 페이로드 형태
-    출력: graph.json 구조 (articles에는 sentiment 관련 필드 없음)
-    """
     if pipeline is None or not _ready:
         raise HTTPException(status_code=503, detail="Pipeline not ready")
 
     total_t0 = time.time()
-
-    # 1) 입력 정리
     prep_t0 = time.time()
     results_list = [r.model_dump() for r in payload.results]
     articles_by_kw = _build_articles_by_keyword(results_list)
     prep_ms = (time.time() - prep_t0) * 1000.0
 
-    # 2) 파이프라인 실행
     pipe_t0 = time.time()
     result: Dict[str, Any] = pipeline.process(
         articles_by_kw,
@@ -198,27 +190,21 @@ def process_news(payload: CrawlingPayload, mode: str = "investment"):
     )
     pipe_ms = (time.time() - pipe_t0) * 1000.0
 
-    # 3) 응답 구성
     resp_t0 = time.time()
-
     nodes_list: List[GraphNode] = [
         GraphNode(id=str(kw), importance=float(imp))
         for kw, imp in result.get("nodes", {}).items()
     ]
-
     edges_list: List[GraphEdge] = []
     for (src, tgt), data in result.get("edges", {}).items():
         edge_payload: Dict[str, Any] = {"source": src, "target": tgt}
         edge_payload.update(_to_py(data))
-
-        # ✅ articles 내부의 sentiment 관련 필드는 완전히 제거
         articles = edge_payload.get("articles")
         if isinstance(articles, list):
             for art in articles:
                 if isinstance(art, dict):
                     art.pop("sentiment", None)
                     art.pop("sentiment_score", None)
-
         edges_list.append(GraphEdge(**edge_payload))
 
     resp_ms = (time.time() - resp_t0) * 1000.0
@@ -238,9 +224,6 @@ def process_news(payload: CrawlingPayload, mode: str = "investment"):
     return GraphResponse(nodes=nodes_list, edges=edges_list, metadata=meta)
 
 
-# ---------------------------------------------------------
-# Local run (optional)
-# ---------------------------------------------------------
 if __name__ == "__main__":
     import uvicorn
     uvicorn.run("app:app", host="0.0.0.0", port=8080, reload=False)

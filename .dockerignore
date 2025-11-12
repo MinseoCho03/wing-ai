@@ -1,32 +1,38 @@
-# VCS / 캐시 / 가상환경
+# Version control
 .git
 .gitignore
-.hf-cache/           # ✅ 모델 캐시: 전체 컨텍스트에서 제외 (아래에서 별도 COPY)
-venv/
-.env/
+
+# Python build/cache
 __pycache__/
 *.pyc
 *.pyo
 *.pyd
-.DS_Store
 *.egg-info/
-pip-wheel-metadata/
-.cache/
-pytest_cache/
-.mypy_cache/
-
-# 대용량 산출물/데이터 (필요 시 개별 COPY)
+*.egg
+.DS_Store
+venv/
+.env/
+.build/
 dist/
-build/
+
+# IDE
+.vscode/
+.idea/
+
+# Hugging Face / model cache (이미지에 bake-in 하므로 제외)
+.hf-cache/
+.huggingface/
+.cache/
+
+# 대용량 산출물/데이터
 outputs/
 checkpoints/
 models/
-*.npy
 *.pt
 *.bin
 *.ckpt
 *.safetensors
 *.ipynb
 
-# (선택) 런타임에 필요 없다면 데이터도 제외
+# 기타
 data/
