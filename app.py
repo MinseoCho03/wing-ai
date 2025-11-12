@@ -6,6 +6,7 @@ import time
 import torch
 import numpy as np
 import os
+import re
 
 from wing_ai.pipeline import WINGAIPipeline
 
@@ -16,7 +17,7 @@ os.environ.setdefault("HF_HOME", "/opt/hf-cache")
 os.environ.setdefault("TRANSFORMERS_OFFLINE", "1")
 os.environ.setdefault("HF_HUB_OFFLINE", "1")
 
-app = FastAPI(title="WING AI API", version="0.1.4")
+app = FastAPI(title="WING AI API", version="0.1.6")
 
 # ---------------------------------------------------------
 # Globals
@@ -27,12 +28,64 @@ _ready: bool = False
 # ---------------------------------------------------------
 # Helpers
 # ---------------------------------------------------------
-def _build_articles_by_keyword(results_list: List[Dict]) -> Dict[str, List[Dict[str, Any]]]:
+def _normalize_text(s: Optional[str]) -> str:
+    if not s:
+        return ""
+    # 필요시 추가 정규화(대소문자, 공백 등)
+    return s.strip()
+
+def _denamespace_kw(raw_q: str, main_keyword: Optional[str]) -> str:
+    """
+    '엔비디아 이재용'처럼 메인키워드가 query 접두로 붙은 케이스를 정규화하여
+    서브키워드만 남기거나, 메인키워드 자체면 그대로 반환.
+    """
+    q = _normalize_text(raw_q)
+    if not main_keyword:
+        return q
+
+    mk = _normalize_text(main_keyword)
+    if q == mk:
+        return q
+
+    # 접두 제거 패턴들: "메인키워드 " / "메인키워드-" / "메인키워드_" / "메인키워드:"
+    patterns = [
+        rf"^{re.escape(mk)}\s+",
+        rf"^{re.escape(mk)}[-_:/|]\s*",
+    ]
+    for pat in patterns:
+        q2 = re.sub(pat, "", q)
+        if q2 != q:
+            return q2.strip()
+
+    return q
+
+def _article_contains_main(art: Dict[str, Any], main_keyword: str) -> bool:
+    if not main_keyword:
+        return False
+    t = (_normalize_text(art.get("title")) + " " + _normalize_text(art.get("description"))).strip()
+    if not t:
+        return False
+    # 한국어는 띄어쓰기 기반 포함으로도 충분히 보수적. 필요 시 형태소/정규식 경계 강화 가능.
+    return main_keyword in t
+
+def _build_articles_by_keyword(
+    results_list: List[Dict],
+    main_keyword: Optional[str],
+) -> Dict[str, List[Dict[str, Any]]]:
+    """
+    크롤링 결과 블록을 {정규화된_키워드: [기사들]} 형태로 변환.
+    - query에서 메인키워드 접두를 제거(네임스페이스 제거)
+    - 메인키워드 노드는 기사 유무와 무관하게 반드시 생성
+    - 🔥 하이드레이션: 서브 버킷 기사 중 제목/요약에 메인키워드가 포함된 기사를 메인 버킷에도 함께 담아 co-occurrence 보장
+    """
     out: Dict[str, List[Dict[str, Any]]] = {}
+
+    # 1) 기본 빌드 (+ 네임스페이스 제거)
     for block in results_list:
-        kw = block.get("query")
-        if not kw:
+        raw_q = block.get("query")
+        if not raw_q:
             continue
+        kw = _denamespace_kw(raw_q, main_keyword)
         items = block.get("items", []) or []
         bucket = out.setdefault(kw, [])
         for it in items:
@@ -43,6 +96,27 @@ def _build_articles_by_keyword(results_list: List[Dict]) -> Dict[str, List[Dict[
                 "originallink": it.get("originallink"),
                 "pubDate": it.get("pubDate"),
             })
+
+    # 2) 메인 노드 보장
+    if main_keyword:
+        out.setdefault(main_keyword, [])
+
+        # 3) 🔥 메인 버킷 하이드레이션
+        main_bucket = out[main_keyword]
+        seen = {a.get("link") for a in main_bucket if isinstance(a, dict)}
+        for kw, bucket in out.items():
+            if kw == main_keyword:
+                continue
+            for art in bucket:
+                if not isinstance(art, dict):
+                    continue
+                lk = art.get("link")
+                if lk in seen:
+                    continue
+                if _article_contains_main(art, main_keyword):
+                    main_bucket.append(art)
+                    seen.add(lk)
+
     return out
 
 
@@ -177,11 +251,15 @@ def process_news(payload: CrawlingPayload, mode: str = "investment"):
         raise HTTPException(status_code=503, detail="Pipeline not ready")
 
     total_t0 = time.time()
+
+    # 1) 입력 정리
     prep_t0 = time.time()
     results_list = [r.model_dump() for r in payload.results]
-    articles_by_kw = _build_articles_by_keyword(results_list)
+    # ⚠️ 메인키워드 전달하여 네임스페이스 제거 + 하이드레이션 수행
+    articles_by_kw = _build_articles_by_keyword(results_list, main_keyword=payload.mainKeyword)
     prep_ms = (time.time() - prep_t0) * 1000.0
 
+    # 2) 파이프라인 실행
     pipe_t0 = time.time()
     result: Dict[str, Any] = pipeline.process(
         articles_by_kw,
@@ -190,6 +268,7 @@ def process_news(payload: CrawlingPayload, mode: str = "investment"):
     )
     pipe_ms = (time.time() - pipe_t0) * 1000.0
 
+    # 3) 응답 직렬화
     resp_t0 = time.time()
     nodes_list: List[GraphNode] = [
         GraphNode(id=str(kw), importance=float(imp))
@@ -199,6 +278,7 @@ def process_news(payload: CrawlingPayload, mode: str = "investment"):
     for (src, tgt), data in result.get("edges", {}).items():
         edge_payload: Dict[str, Any] = {"source": src, "target": tgt}
         edge_payload.update(_to_py(data))
+        # 불필요/중복 감성 필드 정리
         articles = edge_payload.get("articles")
         if isinstance(articles, list):
             for art in articles:
